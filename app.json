@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "Pre-Flight Checklist",
+    "slug": "preflight-checklist",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "preflight",
+    "platforms": ["web"],
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
