@@ -339,22 +339,6 @@ function ChecklistScreen({ onToggleTheme, isDark }: { onToggleTheme: () => void;
 
         {/* Settings Card */}
         <Surface style={[scStyles.settingsCard, { backgroundColor: theme.colors.surface }]} elevation={1}>
-          <View style={scStyles.topRow}>
-            <View style={{ flex: 1 }}>
-              <Text variant="labelSmall" style={{ color: theme.colors.onSurfaceVariant, marginBottom: 4 }}>PROJECT</Text>
-              <View style={[scStyles.inputBox, { borderColor: theme.colors.outlineVariant, backgroundColor: theme.colors.surfaceVariant }]}>
-                <Animated.Text
-                  // @ts-ignore
-                  style={{ color: state.project ? theme.colors.onSurface : theme.colors.outline, fontSize: 15 }}
-                  onPress={() => {}}
-                >
-                  {/* Use TextInput from RN directly */}
-                </Animated.Text>
-              </View>
-            </View>
-          </View>
-
-          {/* Using simple TextInput for fields */}
           <SettingsRow state={state} setField={setField} theme={theme} />
           <View style={{ paddingHorizontal: 16, paddingBottom: 14 }}>
             <ProgressBar done={done} total={total} />
